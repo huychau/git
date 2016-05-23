@@ -25,5 +25,9 @@
   - Delete:
     - Local:
       `git branch -D <branch name>`
+    - Multiple branches: 
+      - `git branch -D branch-name-1 branch-name-2 ...`
+      - Branch name start with `origin/feature/`:
+      `git branch | grep 'origin\/feature\/*' | xargs git branch -d`
     - Remote:
       `git push origin :<branch name>`
