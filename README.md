@@ -26,8 +26,34 @@
     - Local:
       `git branch -D <branch name>`
     - Multiple branches: 
-      - `git branch -D branch-name-1 branch-name-2 ...`
+      - `git branch -D branch-name-1 branch-name-2 ...
       - Branch name start with `origin/feature/`:
       `git branch | grep 'origin\/feature\/*' | xargs git branch -d`
     - Remote:
       `git push origin :<branch name>`
+      
+  ## Git flow simple step by ste
+  1. Install
+  ```
+  sudo apt-get install git-flow
+  ```
+  2. Config
+  ```
+  cd your-folder
+  git flow init
+  ```
+  _Note: Enter all if you don't need modifier_
+  
+  3. Branch
+  - Create branch
+  ```
+  git flow feature branch-name (create base on develop)
+  git flow hotfix branch-name (create base on master)
+  ```
+  - Finish up a feature
+   + Merges MYFEATURE into 'develop'
+   + Removes the feature branch
+   + Switches back to 'develop' branch
+  ```
+  git flow feature finish branch-name
+  ```
