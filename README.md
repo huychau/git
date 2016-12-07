@@ -47,8 +47,8 @@ git flow init
 3. Branch
  - Create branch
 ```
-git flow feature branch-name (create base on develop)
-git flow hotfix branch-name (create base on master)
+git flow feature start branch-name (create base on develop)
+git flow hotfix start branch-name (create base on master)
 ```
  - Finish up a feature (branch)
   + Merges MYFEATURE into 'develop'
