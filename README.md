@@ -37,14 +37,14 @@
 ```
 sudo apt-get install git-flow
 ```
-1. Config
+2. Config
 ```
 cd your-folder
 git flow init
 ```
  _Note: Enter all if you don't need modifier_
 
-1. Branch
+3. Branch
  - Create branch
 ```
 git flow feature branch-name (create base on develop)
